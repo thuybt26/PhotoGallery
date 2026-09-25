@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Image Gallery</title>
-    <link rel="stylesheet" href="css/gallery.css">
+     <meta charset="UTF-8">
+     <title>Accessible Photo Gallery</title>
+     <link rel="stylesheet" href="css/gallery.css">
 </head>
-<body>
-    <h1>My Image Gallery</h1>
 
-    <div id="image">
-        <span id="caption">Hover over an image below to display here.</span>
-    </div>
+<body onload="initGallery()">
+     <h1>My Accessible Image Gallery</h1>
 
-    <div class="thumbnails">
-        <img src="images/Peach.jpg" alt="Peach"
-             onmouseover="upDate(this)" onmouseout="undo()">
-        <img src="images/Rose.jpg" alt="Rose"
-             onmouseover="upDate(this)" onmouseout="undo()">
-        <img src="images/HoaNhai.jpg" alt="Hoa Nhai"
-             onmouseover="upDate(this)" onmouseout="undo()">
-        <img src="images/Tulip.jpg" alt="Tulip"
-             onmouseover="upDate(this)" onmouseout="undo()">
-        <img src="images/Lotus.jpg" alt="Lotus"
-             onmouseover="upDate(this)" onmouseout="undo()">
-    </div>
+     <div id="image">
+          <span id="caption">Hover over an image below to display here.</span>
+     </div>
 
-    <script src="js/gallery.js"></script>
+     <div class="thumbnails">
+          <img src="images/Peach.jpg" alt="Peach flower"
+               onmouseover="upDate(this)" onmouseout="undo()"
+               onfocus="upDate(this)" onblur="undo()">
+          <img src="images/Rose.jpg" alt="Rose flower"
+               onmouseover="upDate(this)" onmouseout="undo()"
+               onfocus="upDate(this)" onblur="undo()">
+          <img src="images/HoaNhai.jpg" alt="Jasmine flower"
+               onmouseover="upDate(this)" onmouseout="undo()"
+               onfocus="upDate(this)" onblur="undo()">
+          <img src="images/Tulip.jpg" alt="Tulip flower"
+               onmouseover="upDate(this)" onmouseout="undo()"
+               onfocus="upDate(this)" onblur="undo()">
+          <img src="images/Lotus.jpg" alt="Lotus flower"
+               onmouseover="upDate(this)" onmouseout="undo()"
+               onfocus="upDate(this)" onblur="undo()">
+          <img src="images/Sunflower.jpg" alt="Sunflower"
+               onmouseover="upDate(this)" onmouseout="undo()"
+               onfocus="upDate(this)" onblur="undo()">
+     </div>
+
+     <script src="js/gallery.js"></script>
 </body>
+
 </html>
